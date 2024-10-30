@@ -1,0 +1,17 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Smart Projects\IsoBuster]
+
+; It's scary sometimes when you make a clone
+; you want to make sure you don't accidentally select a drive with important data as the destination for a clone
+
+; ExcludedCloneDestinations lists all drives you don't want to see in the dialog, so that you can't select them
+
+; Physical drives have a decimal number and *need* to be put between brackets, for instance drive 0 is listed as (0)
+; The need for brackets so that 10 is not seen as 1 and 0 (for instance)
+; Logical drives have a logical drive letter
+; There is no need for other decorations (no spaces, no commas, ..), the order is also not important
+
+; Following example blocks physical drives 0 and 1 and logical drives C, D and E from showing up in the selection dialog
+
+"ExcludedCloneDestinations"="(0)(1)CDE"

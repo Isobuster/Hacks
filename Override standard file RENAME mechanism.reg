@@ -1,0 +1,24 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Smart Projects\IsoBuster]
+
+; AUTOMATIC FILE RENAMING
+
+; Below described fields are not created by IsoBuster when you close it.  They stay hidden
+; However, when you add them (manually) to the registry they are used
+
+
+; FileRenameRule = 0 -> DEFAULT. Same as what Windows does.  It adds the FileRenameInsert (" (%u)") just before the last dot ('.'), unless the last dot is the start of the filename
+; FileRenameRule = 1 -> The FileRenameInsert is *always* added at the end of the filename
+
+"FileRenameRule"=dword:00000000
+;"FileRenameRule"=dword:00000001
+
+; FileRenameInsert is the string that is inserted
+; It is parsed via (s)printf and the single %u, %f or %x is replaced by an index value
+; The index value always starts with 2 (cfr. Windows) and is increased if there is still a collision (as in the new filename also already exists)
+; "FileRenameInsert"=" (%u)" is the DEFAULT
+
+"FileRenameInsert"=" (%u)"
+;"FileRenameInsert"="__(%04u)__"
+
