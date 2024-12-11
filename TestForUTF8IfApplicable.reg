@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Smart Projects\IsoBuster]
+
+; FYI: https://www.isobuster.com/news/isobuster_5.5_release_notes
+; "We try to detect (and apply) UTF-8 in ISO9660 file system data"
+; Enable (00000001) or Disable (00000000) the program's default setting
+; In IB 5.5 the default is on (00000001)
+
+"ISO9660TestForUTF8IfApplicable"=dword:00000001
