@@ -1,0 +1,16 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Smart Projects\IsoBuster]
+
+; For context: https://www.isobuster.com/help/play_cd_audio
+
+; From IsoBuster 5.5.3 onward
+; Playing analogue audio has been disabled, but not removed.  
+; To enable it again, set ShowAudioPlay to 1
+; Disable it again by setting ShowAudioPlay to 0
+
+; ENABLE
+"ShowAudioPlay"=dword:00000001
+
+; DISABLE
+;"ShowAudioPlay"=dword:00000000
