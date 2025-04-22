@@ -1,0 +1,16 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Smart Projects\IsoBuster]
+
+; From IsoBuster 5.6 onward, certain (hard coded) video extensions can be played via LibVLC
+; Right mouse click a video file in IsoBuster and choose "Preview" to play it
+; IsoBuster 5.6 (*) checks for : "mpg;mpeg;mp4;wmv;avi;mov;vob;vro;m2ts;trp;mkv;mts"
+; (*) This may change over time in newer versions
+
+; It is possible to add other extensions that can be played with LibVLC as well
+; They just haven't been tested yet and/or don't add value at the moment 
+
+; Separate the extensions with a ";" character
+; An example:
+
+"VLC.Ext"="mp3;aif;wav"
